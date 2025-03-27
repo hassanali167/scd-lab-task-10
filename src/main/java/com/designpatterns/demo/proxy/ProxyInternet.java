@@ -13,6 +13,7 @@ public class ProxyInternet implements Internet {
         this.isManager = isManager;
     }
 
+    
     @Override
     public void connectTo(String site) {
         if (isManager || ALLOWED_SITES.contains(site)) {
