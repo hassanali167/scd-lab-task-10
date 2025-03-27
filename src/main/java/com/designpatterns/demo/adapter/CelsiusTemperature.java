@@ -7,6 +7,7 @@ public class CelsiusTemperature implements TemperatureReader {
         this.temperature = temperature;
     }
 
+    
     @Override
     public double getTemperature() {
         return temperature;
