@@ -7,6 +7,7 @@ public class TemperatureAdapter implements TemperatureReader {
         this.fahrenheitTemperature = fahrenheitTemperature;
     }
 
+    
     @Override
     public double getTemperature() {
         return (fahrenheitTemperature.getTemperatureInFahrenheit() - 32) * 5 / 9;
