@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/proxy")
 public class ProxyController {
 
+    
     @GetMapping("/access")
     public String accessSite(@RequestParam String site, @RequestParam boolean isManager) {
         Internet internet = new ProxyInternet(isManager);
